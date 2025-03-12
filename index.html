@@ -1,54 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Blackly</title>
+    <title>BlacklyDev - Custom Software & App Development Services</title>
+    <meta name="description"
+        content="BlacklyDev provides innovative software solutions, web and mobile app development, marketing, and testing services to help businesses grow.">
+    <meta name="keywords"
+        content="software development, web development, mobile app development, app marketing, lead generation, cloud solutions, IT services">
+    <meta name="author" content="BlacklyDev">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://blackly.dev/">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="BlacklyDev - Custom Software & App Development Services">
+    <meta property="og:description"
+        content="Expert solutions in app development, web development, marketing, and more!">
+    <meta property="og:image" content="https://blackly.dev/assets/preview.jpg">
+    <meta property="og:url" content="https://blackly.dev/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BlacklyDev - Custom Software & App Development Services">
+    <meta name="twitter:description"
+        content="BlacklyDev provides innovative software and marketing solutions for businesses worldwide.">
+    <meta name="twitter:image" content="https://blackly.dev/assets/preview.jpg">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "BlacklyDev",
+            "url": "https://blackly.dev/",
+            "logo": "https://blackly.dev/assets/logo.png",
+            "description": "BlacklyDev offers software solutions, web development, app development, marketing, and testing services.",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1234567890",
+                "contactType": "customer service"
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: Montserrat;
         }
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            border: 1px solid #333;
-            border-radius: 10px;
-            background-color: #262626;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-        .whatsapp {
-            font-size: 1.1rem;
-            color: #25D366; /* WhatsApp green */
-            text-decoration: none;
-        }
-        .whatsapp:hover {
-            text-decoration: underline;
+
+        .text-outline {
+            text-shadow:
+                -2px -2px 0 white,
+                2px -2px 0 white,
+                -2px 2px 0 white,
+                2px 2px 0 white;
         }
     </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d85ca7a2f2.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome to Blackly</h1>
-        <p>Publish Android app instantly!</p>
-        <p>Contact us on WhatsApp: 
-            <a href="https://wa.me/10343345435" class="whatsapp">+0000000000</a>
-        </p>
-    </div>
+
+<body class="max-w-[1440px] mx-auto">
+    <nav class="h-[75px] border-b-[1px] border-[#17191C] flex items-center w-full bg-[#090A0B]">
+        <div class="w-11/12 mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-[#23272A] rounded-full border border-white border-2">
+                    <img src="./assets/logo.png" class="w-[25px]" alt="">
+                </div>
+                <h2 class="text-[24px] font-black text-black text-outline">Blackly</h2>
+
+            </div>
+            <ul class="flex items-center gap-6">
+                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">Home</a></li>
+                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">Services</a></li>
+                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">About</a></li>
+                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">Work</a></li>
+                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">Contact</a></li>
+            </ul>
+            <div>
+                <button
+                    class="text-[18px] font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
+                        class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-phone"></i>Contact Us</button>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-[#090A0B]">
+        <div class="w-11/12 mx-auto">
+            <div class="text-center flex flex-col items-center py-10">
+                <h3 class="text-[68px] w-[750px] font-semibold text-white">Transform Your Ideas into Digital Success
+                </h3>
+                <p class="text-[18px] w-[600px] mt-4 font-medium text-[#9297A0]">Expert Solutions for App Development,
+                    Web Development, Marketing, and More!</p>
+                <button
+                    class="text-[18px] mt-6 font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
+                        class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-arrow-right"></i> Get
+                    Started</button>
+            </div>
+            <div class="grid grid-cols-3 mt-6 place-items-center w-full">
+                <div class="w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="./assets/undraw_mobile-development_tjxm.svg"
+                        alt="Card Image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-[#FFFFFF]">Development & Publishing</h3>
+                        <ul class="mt-3 text-[#D1D5DB] space-y-2">
+                            <li>✔ App Development</li>
+                            <li>✔ Website Development</li>
+                            <li>✔ App Publishing</li>
+                        </ul>
+                        <button
+                            class="text-[18px] mt-6 font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
+                                class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-phone"></i>Contact
+                            Us</button>
+                    </div>
+                </div>
+                <div class="w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="./assets/undraw_programming_65t2.svg" alt="Card Image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-[#FFFFFF]">Marketing & Promotion</h3>
+                        <ul class="mt-3 text-[#D1D5DB] space-y-2">
+                            <li>✔ App Promotion</li>
+                            <li>✔ Ads Promotion</li>
+                            <li>✔ Leads Selling</li>
+                        </ul>
+                        <button
+                            class="text-[18px] mt-6 font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
+                                class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-phone"></i>Contact
+                            Us</button>
+                    </div>
+                </div>
+                <div class="w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="./assets/undraw_product-photography_pouq.svg"
+                        alt="Card Image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-[#FFFFFF]">Testing & Console Services</h3>
+                        <ul class="mt-3 text-[#D1D5DB] space-y-2">
+                            <li>✔ 12 Testing</li>
+                            <li>✔ 20 Testing</li>
+                            <li>✔ Google Console Renting</li>
+                        </ul>
+                        <button
+                            class="text-[18px] mt-6 font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
+                                class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-phone"></i>Contact
+                            Us</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#090A0B] py-16">
+        <div class="w-11/12 mx-auto text-center">
+            <h2 class="text-[48px] font-semibold text-white">Our Services</h2>
+            <p class="text-[18px] w-[600px] mx-auto mt-4 font-medium text-[#9297A0]">
+                Explore our wide range of expert services designed to help your business grow and succeed.
+            </p>
+
+            <div class="grid grid-cols-4 gap-10 mt-12">
+                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
+                    <!-- Image Section -->
+                    <div class="relative h-[70%]">
+                        <img src="./assets/web-development.jpg" alt="Card Image" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Title & Button Section -->
+                    <div class="h-[30%] p-4 flex flex-col items-start">
+                        <h3 class="text-xl text-white font-semibold">Web Development</h3>
+                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
+                            <i class="fas fa-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
+                    <!-- Image Section -->
+                    <div class="relative h-[70%]">
+                        <img src="./assets/app-development.jpg" alt="Card Image" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Title & Button Section -->
+                    <div class="h-[30%] p-4 flex flex-col items-start">
+                        <h3 class="text-xl text-white font-semibold">App Development</h3>
+                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
+                            <i class="fas fa-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
+                    <!-- Image Section -->
+                    <div class="relative h-[70%]">
+                        <img src="./assets/console.jpg" alt="Card Image" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Title & Button Section -->
+                    <div class="h-[30%] p-4 flex flex-col items-start">
+                        <h3 class="text-xl text-white font-semibold">App Publishing</h3>
+                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
+                            <i class="fas fa-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
+                    <!-- Image Section -->
+                    <div class="relative h-[70%]">
+                        <img src="./assets/app.jpg" alt="Card Image" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Title & Button Section -->
+                    <div class="h-[30%] p-4 flex flex-col items-start">
+                        <h3 class="text-xl text-white font-semibold">App Promoting</h3>
+                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
+                            <i class="fas fa-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
+                    <!-- Image Section -->
+                    <div class="relative h-[70%]">
+                        <img src="./assets/adds.jpg" alt="Card Image" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Title & Button Section -->
+                    <div class="h-[30%] p-4 flex flex-col items-start">
+                        <h3 class="text-xl text-white font-semibold">Adds Promotion</h3>
+                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
+                            <i class="fas fa-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
+                    <!-- Image Section -->
+                    <div class="relative h-[70%]">
+                        <img src="./assets/leads-selling.jpg" alt="Card Image" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Title & Button Section -->
+                    <div class="h-[30%] p-4 flex flex-col items-start">
+                        <h3 class="text-xl text-white font-semibold">Lead Selling</h3>
+                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
+                            <i class="fas fa-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
+                    <!-- Image Section -->
+                    <div class="relative h-[70%]">
+                        <img src="./assets/12.avif" alt="Card Image" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Title & Button Section -->
+                    <div class="h-[30%] p-4 flex flex-col items-start">
+                        <h3 class="text-xl text-white font-semibold">12 & 20 Testing</h3>
+                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
+                            <i class="fas fa-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
+                    <!-- Image Section -->
+                    <div class="relative h-[70%]">
+                        <img src="./assets/20.jpg" alt="Card Image" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Title & Button Section -->
+                    <div class="h-[30%] p-4 flex flex-col items-start">
+                        <h3 class="text-xl text-white font-semibold">Google Console Renting</h3>
+                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
+                            <i class="fas fa-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 </body>
+
 </html>
