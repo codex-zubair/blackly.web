@@ -44,6 +44,7 @@
             }
         }
     </script>
+    <link rel="icon" type="image/png" href="./assets/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -296,6 +297,27 @@
         </div>
     </section>
 
+    <!-- Custom Alert Box -->
+    <div id="customAlert"
+        class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
+            <h2 class="text-lg font-bold text-gray-800">🚧 Website Under Construction 🚧</h2>
+            <p class="text-gray-600 mt-2">Some features may not be available.</p>
+            <button onclick="closeAlert()" class="mt-4 bg-black text-white px-4 py-2 rounded-lg">OK</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to show alert on page load
+        window.onload = function () {
+            document.getElementById("customAlert").classList.remove("hidden");
+        };
+
+        // Function to close the alert
+        function closeAlert() {
+            document.getElementById("customAlert").classList.add("hidden");
+        }
+    </script>
 
 
 </body>
