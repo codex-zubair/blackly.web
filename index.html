@@ -90,14 +90,18 @@
     ></script>
   </head>
 
-  <body class="bg-[#080808]">
+  <body class="bg-[#121212]">
     <nav
       class="h-[64px] border-b-[1px] border-[#17191C] flex items-center w-full"
     >
       <div class="w-11/12 mx-auto flex items-center justify-between">
         <div class="flex items-center gap-2">
           <div class="bg-[#23272A] rounded-full border-white border-2">
-            <img src="./assets/logo.png" class="w-8 h-8" alt="" />
+            <img
+              src="./assets/logo.png"
+              class="w-8 h-8 rotate-[15deg]"
+              alt=""
+            />
           </div>
           <h2 class="text-[24px] font-semibold text-white">Blackly</h2>
         </div>
@@ -124,35 +128,37 @@
         </ul>
         <div>
           <button
-            class="text-[18px] font-medium text-[#080808] bg-white px-4 py-1 rounded-full flex items-center gap-2"
+            class="text-[18px] font-medium text-[#121212] bg-white px-4 py-1 rounded-full flex items-center gap-2"
           >
             <i
-              class="fa-solid text-sm text-white bg-[#080808] px-2 py-1 rounded-full fa-phone"
+              class="fa-solid text-sm text-white bg-[#121212] px-2 py-1 rounded-full fa-phone"
             ></i
             >Contact Us
           </button>
         </div>
       </div>
     </nav>
-    <section class="bg-[#080808] container mx-auto">
+    <section class="bg-[#121212] container mx-auto">
       <div class="w-11/12 mx-auto mt-24">
         <!-- hero section -->
         <div class="text-center flex flex-col items-center py-10">
-          <h3 class="text-[68px] w-[900px] font-semibold text-white">
+          <h3 class="text-[68px] w-[900px] font-medium text-white">
             Transform Your Ideas into Digital Success
           </h3>
           <p class="text-[18px] w-[600px] mt-4 font-medium text-[#9297A0]">
             Expert Solutions for App Development, Web Development, Marketing,
             and More!
           </p>
-          <button
-            class="text-[18px] mt-6 font-medium text-[#080808] bg-white px-4 py-1.5 rounded-full flex items-center gap-2"
+          <a href="#ourservices">
+            <button
+              class="text-[18px] mt-6 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2"
+            >
+              <i
+                class="fa-solid text-white bg-[#121212] px-1.5 py-1 rounded-full fa-arrow-right"
+              ></i>
+              Get Started
+            </button></a
           >
-            <i
-              class="fa-solid text-white bg-[#080808] px-1.5 py-1 rounded-full fa-arrow-right"
-            ></i>
-            Get Started
-          </button>
         </div>
 
         <!-- contactSection -->
@@ -175,10 +181,10 @@
                 <li>✔ App Publishing</li>
               </ul>
               <button
-                class="text-base mt-12 font-medium text-[#080808] bg-white px-4 py-1.5 rounded-full flex items-center gap-2"
+                class="text-base mt-12 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2"
               >
                 <i
-                  class="fa-solid text-white text-sm bg-[#080808] px-2 p-1 rounded-full fa-phone"
+                  class="fa-solid text-white text-sm bg-[#121212] px-2 p-1 rounded-full fa-phone"
                 ></i
                 >Contact Us
               </button>
@@ -202,10 +208,10 @@
                 <li>✔ Leads Selling</li>
               </ul>
               <button
-                class="text-base mt-12 font-medium text-[#080808] bg-white px-4 py-1.5 rounded-full flex items-center gap-2"
+                class="text-base mt-12 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2"
               >
                 <i
-                  class="fa-solid text-white text-sm bg-[#080808] px-2 p-1 rounded-full fa-phone"
+                  class="fa-solid text-white text-sm bg-[#121212] px-2 p-1 rounded-full fa-phone"
                 ></i
                 >Contact Us
               </button>
@@ -229,10 +235,10 @@
                 <li>✔ Google Console Renting</li>
               </ul>
               <button
-                class="text-base mt-12 font-medium text-[#080808] bg-white px-4 py-1.5 rounded-full flex items-center gap-2"
+                class="text-base mt-12 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2"
               >
                 <i
-                  class="fa-solid text-white text-sm bg-[#080808] px-2 p-1 rounded-full fa-phone"
+                  class="fa-solid text-white text-sm bg-[#121212] px-2 p-1 rounded-full fa-phone"
                 ></i
                 >Contact Us
               </button>
@@ -242,7 +248,10 @@
       </div>
     </section>
 
-    <section class="bg-[#080808] py-16 container mx-auto mt-36">
+    <section
+      id="ourservices"
+      class="bg-[#121212] py-16 container mx-auto mt-36"
+    >
       <div class="w-11/12 mx-auto text-center">
         <h2 class="text-[48px] font-semibold text-white">Our Services</h2>
         <p
@@ -271,9 +280,20 @@
             <!-- Title & Button Section -->
             <div class="h-[30%] p-4 flex flex-col items-start">
               <h3 class="text-xl text-white font-semibold">Web Development</h3>
-              <button class="bg-white px-2.5 py-1 mt-2 text-black rounded-full">
-                <i class="fas fa-arrow-right text-xl"></i>
-              </button>
+              <div class="w-full flex space-x-3 mt-3">
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:font-semibold w-24 hover:bg-[#121212] hover:text-white"
+                >
+                  Details
+                </button>
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:bg-[#121212]"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp text-xl text-green-600 hover:text-green-700 hover:font-bold"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
           <div
@@ -294,9 +314,20 @@
             <!-- Title & Button Section -->
             <div class="h-[30%] p-4 flex flex-col items-start">
               <h3 class="text-xl text-white font-semibold">App Development</h3>
-              <button class="bg-white px-2.5 py-1 mt-2 text-black rounded-full">
-                <i class="fas fa-arrow-right text-xl"></i>
-              </button>
+              <div class="w-full flex space-x-3 mt-3">
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:font-semibold w-24 hover:bg-[#121212] hover:text-white"
+                >
+                  Details
+                </button>
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:bg-[#121212]"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp text-xl text-green-600 hover:text-green-700 hover:font-bold"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
           <div
@@ -317,9 +348,20 @@
             <!-- Title & Button Section -->
             <div class="h-[30%] p-4 flex flex-col items-start">
               <h3 class="text-xl text-white font-semibold">App Publishing</h3>
-              <button class="bg-white px-2.5 py-1 mt-2 text-black rounded-full">
-                <i class="fas fa-arrow-right text-xl"></i>
-              </button>
+              <div class="w-full flex space-x-3 mt-3">
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:font-semibold w-24 hover:bg-[#121212] hover:text-white"
+                >
+                  Details
+                </button>
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:bg-[#121212]"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp text-xl text-green-600 hover:text-green-700 hover:font-bold"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
           <div
@@ -340,13 +382,26 @@
             <!-- Title & Button Section -->
             <div class="h-[30%] p-4 flex flex-col items-start">
               <h3 class="text-xl text-white font-semibold">App Promoting</h3>
-              <button class="bg-white px-2.5 py-1 mt-2 text-black rounded-full">
-                <i class="fas fa-arrow-right text-xl"></i>
-              </button>
+              <div class="w-full flex space-x-3 mt-3">
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:font-semibold w-24 hover:bg-[#121212] hover:text-white"
+                >
+                  Details
+                </button>
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:bg-[#121212]"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp text-xl text-green-600 hover:text-green-700 hover:font-bold"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
+
+          
           <div
-            class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]"
+            class="relative w-[300px] h-96 rounded-xl overflow-hidden shadow-lg bg-[#23272A]"
           >
             <!-- Image Section -->
             <div class="relative h-[70%]">
@@ -363,9 +418,20 @@
             <!-- Title & Button Section -->
             <div class="h-[30%] p-4 flex flex-col items-start">
               <h3 class="text-xl text-white font-semibold">Adds Promotion</h3>
-              <button class="bg-white px-2.5 py-1 mt-2 text-black rounded-full">
-                <i class="fas fa-arrow-right text-xl"></i>
-              </button>
+              <div class="w-full flex space-x-3 mt-3">
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:font-semibold w-24 hover:bg-[#121212] hover:text-white"
+                >
+                  Details
+                </button>
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:bg-[#121212]"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp text-xl text-green-600 hover:text-green-700 hover:font-bold"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
           <div
@@ -386,9 +452,20 @@
             <!-- Title & Button Section -->
             <div class="h-[30%] p-4 flex flex-col items-start">
               <h3 class="text-xl text-white font-semibold">Lead Selling</h3>
-              <button class="bg-white px-2.5 py-1 mt-2 text-black rounded-full">
-                <i class="fas fa-arrow-right text-xl"></i>
-              </button>
+              <div class="w-full flex space-x-3 mt-3">
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:font-semibold w-24 hover:bg-[#121212] hover:text-white"
+                >
+                  Details
+                </button>
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:bg-[#121212]"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp text-xl text-green-600 hover:text-green-700 hover:font-bold"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
           <div
@@ -409,9 +486,20 @@
             <!-- Title & Button Section -->
             <div class="h-[30%] p-4 flex flex-col items-start">
               <h3 class="text-xl text-white font-semibold">12 & 20 Testing</h3>
-              <button class="bg-white px-2.5 py-1 mt-2 text-black rounded-full">
-                <i class="fas fa-arrow-right text-xl"></i>
-              </button>
+              <div class="w-full flex space-x-3 mt-3">
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:font-semibold w-24 hover:bg-[#121212] hover:text-white"
+                >
+                  Details
+                </button>
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:bg-[#121212]"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp text-xl text-green-600 hover:text-green-700 hover:font-bold"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
           <div
@@ -434,9 +522,20 @@
               <h3 class="text-xl text-white font-semibold">
                 Google Console Renting
               </h3>
-              <button class="bg-white px-2.5 py-1 mt-2 text-black rounded-full">
-                <i class="fas fa-arrow-right text-xl"></i>
-              </button>
+              <div class="w-full flex space-x-3 mt-3">
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:font-semibold w-24 hover:bg-[#121212] hover:text-white"
+                >
+                  Details
+                </button>
+                <button
+                  class="bg-white px-2.5 py-1 mt-2 text-black rounded-full hover:bg-[#121212]"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp text-xl text-green-600 hover:text-green-700 hover:font-bold"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -445,7 +544,7 @@
 
     <!-- Footer -->
     <footer
-      class="max-w-screen-2xl mx-auto bg-[#080808] text-gray-300 py-10 px-10 md:px-3 mt-24"
+      class="max-w-screen-2xl mx-auto bg-[#121212] text-gray-300 py-10 px-10 md:px-3 mt-24"
     >
       <div class="mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         <!-- Company Info -->
