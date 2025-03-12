@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #262626;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px; /* change */
+}
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.whatsapp {
+  font-size: 1.1rem;
+  color: #25d366; /* WhatsApp green */
+  text-decoration: none;
+}
+.whatsapp:hover {
+  text-decoration: underline;
+}
+
+<!-- <div class="container">
+  <h1>Welcome to Blackly</h1>
+  <h3 class="text-3xl font-bold underline text-red">Hello world!</h3>
+  <p class="te">Publish Android app instantly!</p>
+  <p>
+    Contact us on WhatsApp:
+    <a href="https://wa.me/10343345435" class="whatsapp">+0000000000</a>
+  </p>
+</div> -->
