@@ -297,6 +297,110 @@
         </div>
     </section>
 
+    <section class="bg-[#090A0B] py-16">
+        <div class="w-11/12 mx-auto text-center">
+            <!-- Title -->
+            <h2 class="text-[48px] font-semibold text-white">Why Choose Us?</h2>
+            <p class="text-[18px] w-[600px] mx-auto mt-4 font-medium text-[#9297A0]">
+                Our expertise and commitment to quality make us the best choice for your business needs.
+            </p>
+
+            <!-- Two-column layout -->
+            <div class="grid md:grid-cols-2 gap-10 mt-12 items-start">
+                <!-- Left Side - Image -->
+                <div class="w-full">
+                    <img src="./assets/why-choose-us.jpg" alt="Why Choose Us" class="w-full h-[485px] object-cover rounded-lg shadow-lg" />
+                </div>
+
+                <!-- Right Side - Brief & Accordion -->
+                <div class="text-left">
+                    <!-- Accordion Section -->
+                    <div class="space-y-4">
+                        <div class="border border-gray-600 rounded-lg overflow-hidden">
+                            <button
+                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
+                                onclick="toggleAccordion(this)">
+                                <span>Expert Team</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="p-4 text-[#9297A0] bg-[#2C2F33]">Our team consists of skilled professionals with
+                                years of experience.</div>
+                        </div>
+
+                        <div class="border border-gray-600 rounded-lg overflow-hidden">
+                            <button
+                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
+                                onclick="toggleAccordion(this)">
+                                <span>Quality Assurance</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">We ensure top-notch quality in every
+                                project we deliver.</div>
+                        </div>
+
+                        <div class="border border-gray-600 rounded-lg overflow-hidden">
+                            <button
+                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
+                                onclick="toggleAccordion(this)">
+                                <span>Timely Delivery</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">We prioritize deadlines without
+                                compromising quality.</div>
+                        </div>
+
+                        <div class="border border-gray-600 rounded-lg overflow-hidden">
+                            <button
+                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
+                                onclick="toggleAccordion(this)">
+                                <span>Customer Support</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">24/7 dedicated support to assist you at
+                                any stage.</div>
+                        </div>
+                        <div class="border border-gray-600 rounded-lg overflow-hidden">
+                            <button
+                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
+                                onclick="toggleAccordion(this)">
+                                <span>Affordable Pricing</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">We offer competitive pricing without compromising on quality.</div>
+                        </div>
+                        <div class="border border-gray-600 rounded-lg overflow-hidden">
+                            <button
+                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
+                                onclick="toggleAccordion(this)">
+                                <span>Affordable Pricing</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">We offer competitive pricing without compromising on quality.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector("i");
+
+            if (content.classList.contains("hidden")) {
+                document.querySelectorAll('.space-y-4 div div.p-4').forEach(el => el.classList.add('hidden'));
+                document.querySelectorAll('.space-y-4 button i').forEach(i => i.classList.remove('rotate-180'));
+            }
+
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+    </script>
+
+
+
+
     <!-- Custom Alert Box -->
     <div id="customAlert"
         class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
