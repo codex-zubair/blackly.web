@@ -70,45 +70,74 @@
 </head>
 
 <body class="max-w-[1440px] mx-auto">
-    <nav class="h-[75px] border-b-[1px] border-[#17191C] flex items-center w-full bg-[#090A0B]">
+    <nav class="h-[75px] border-b-[1px] border-[#17191C] flex items-center w-full bg-[#121212]">
         <div class="w-11/12 mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <div class="bg-[#23272A] rounded-full border border-white border-2">
-                    <img src="./assets/logo.png" class="w-[25px]" alt="">
-                </div>
-                <h2 class="text-[24px] font-black text-black text-outline">Blackly</h2>
+            <!-- Left Section: Logo & Menu Toggle -->
+            <div class="flex items-center gap-4">
 
+                <div class="flex items-center gap-2">
+                    <div class="bg-[#23272A] rounded-full border border-white border-2">
+                        <img src="./assets/logo.png" class="w-[25px]" alt="">
+                    </div>
+                    <h2 class="text-[24px] font-black text-black text-outline">Blackly</h2>
+                </div>
+                <button id="menu-toggle" class="lg:hidden text-white text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-            <ul class="flex items-center gap-6">
-                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">Home</a></li>
-                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">Services</a></li>
-                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">About</a></li>
-                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">Work</a></li>
-                <li><a class="text-[17px] font-medium text-[#9297A0]" href="">Contact</a></li>
+
+            <!-- Menu Items -->
+            <ul id="menu"
+                class="lg:flex lg:gap-4 hidden flex-col lg:flex-row absolute lg:static bg-[#121212] lg:bg-transparent top-[75px] left-4 w-[200px] lg:w-auto py-4 lg:py-0 shadow-lg rounded-lg lg:shadow-none">
+                <li><a class="text-[17px] font-medium text-[#9297A0] block px-4 py-2 lg:px-0 lg:py-0"
+                        href="#home">Home</a></li>
+                <li><a class="text-[17px] font-medium text-[#9297A0] block px-4 py-2 lg:px-0 lg:py-0"
+                        href="#our-services">Services</a></li>
+                <li><a class="text-[17px] font-medium text-[#9297A0] block px-4 py-2 lg:px-0 lg:py-0"
+                        href="#why-choose-us">Why Us</a></li>
+                <li><a class="text-[17px] font-medium text-[#9297A0] block px-4 py-2 lg:px-0 lg:py-0"
+                        href="https://wa.me/8801622559988" target="_blank">Contact</a></li>
             </ul>
+
+            <!-- Contact Button (Stays in Place) -->
             <div>
-                <button
-                    class="text-[18px] font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
-                        class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-phone"></i>Contact Us</button>
+                <a href="https://wa.me/8801622559988" target="_blank" rel="noopener noreferrer">
+                    <button
+                        class="text-[18px] font-medium text-[#121212] bg-white px-4 py-2 rounded-full flex items-center gap-2">
+                        <i class="fa-solid text-white bg-[#121212] px-4 py-1.5 rounded-full fa-phone"></i>Contact Us
+                    </button>
+                </a>
             </div>
         </div>
     </nav>
-    <section class="bg-[#090A0B]">
+
+
+
+
+
+
+    <section id="home" class="bg-[#121212]">
         <div class="w-11/12 mx-auto">
             <div class="text-center flex flex-col items-center py-10">
-                <h3 class="text-[68px] w-[750px] font-semibold text-white">Transform Your Ideas into Digital Success
+                <h3 class="text-[48px] md:text-[68px] w-full max-w-[750px] font-semibold text-white text-center">
+                    Transform Your Ideas into Digital Success
                 </h3>
-                <p class="text-[18px] w-[600px] mt-4 font-medium text-[#9297A0]">Expert Solutions for App Development,
-                    Web Development, Marketing, and More!</p>
-                <button
-                    class="text-[18px] mt-6 font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
-                        class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-arrow-right"></i> Get
-                    Started</button>
+                <p class="text-[16px] md:text-[18px] w-full max-w-[600px] mt-4 font-medium text-[#9297A0] text-center">
+                    Expert Solutions for App Development, Web Development, Marketing, and More!
+                </p>
+                <a href="#our-services">
+                    <button
+                        class="text-[16px] md:text-[18px] mt-6 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
+                        <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-arrow-right"></i> Get Started
+                    </button>
+                </a>
             </div>
-            <div class="grid grid-cols-3 mt-6 place-items-center w-full">
-                <div class="w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="./assets/undraw_mobile-development_tjxm.svg"
-                        alt="Card Image">
+    
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 place-items-center w-full">
+                <!-- Card 1 -->
+                <div class="w-full max-w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="./assets/undraw_mobile-development_tjxm.svg" alt="Card Image">
                     <div class="p-5">
                         <h3 class="text-xl font-semibold text-[#FFFFFF]">Development & Publishing</h3>
                         <ul class="mt-3 text-[#D1D5DB] space-y-2">
@@ -116,13 +145,17 @@
                             <li>✔ Website Development</li>
                             <li>✔ App Publishing</li>
                         </ul>
-                        <button
-                            class="text-[18px] mt-6 font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
-                                class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-phone"></i>Contact
-                            Us</button>
+                        <a href="https://wa.me/8801622559988" target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="text-[16px] md:text-[18px] mt-6 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
+                                <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-phone"></i> Contact Us
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <div class="w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
+    
+                <!-- Card 2 -->
+                <div class="w-full max-w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
                     <img class="w-full h-48 object-cover" src="./assets/undraw_programming_65t2.svg" alt="Card Image">
                     <div class="p-5">
                         <h3 class="text-xl font-semibold text-[#FFFFFF]">Marketing & Promotion</h3>
@@ -131,15 +164,18 @@
                             <li>✔ Ads Promotion</li>
                             <li>✔ Leads Selling</li>
                         </ul>
-                        <button
-                            class="text-[18px] mt-6 font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
-                                class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-phone"></i>Contact
-                            Us</button>
+                        <a href="https://wa.me/8801622559988" target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="text-[16px] md:text-[18px] mt-6 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
+                                <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-phone"></i> Contact Us
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <div class="w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="./assets/undraw_product-photography_pouq.svg"
-                        alt="Card Image">
+    
+                <!-- Card 3 -->
+                <div class="w-full max-w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="./assets/undraw_product-photography_pouq.svg" alt="Card Image">
                     <div class="p-5">
                         <h3 class="text-xl font-semibold text-[#FFFFFF]">Testing & Console Services</h3>
                         <ul class="mt-3 text-[#D1D5DB] space-y-2">
@@ -147,241 +183,274 @@
                             <li>✔ 20 Testing</li>
                             <li>✔ Google Console Renting</li>
                         </ul>
-                        <button
-                            class="text-[18px] mt-6 font-medium text-[#090A0B] bg-white px-4 py-2 rounded-full flex items-center gap-2"><i
-                                class="fa-solid text-white bg-[#090A0B] px-4 py-2 rounded-full fa-phone"></i>Contact
-                            Us</button>
+                        <a href="https://wa.me/8801622559988" target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="text-[16px] md:text-[18px] mt-6 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
+                                <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-phone"></i> Contact Us
+                            </button>
+                        </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <section class="bg-[#090A0B] py-16">
+    
+    <section id="why-choose-us" class="bg-[#121212] pt-32 pb-16">
+        <div class="w-11/12 mx-auto">
+            <h2 class="text-[36px] md:text-[48px] text-center font-semibold text-white">Why Choose Us</h2>
+            <p class="text-[16px] md:text-[18px] max-w-[90%] md:max-w-[600px] text-center mx-auto mt-4 font-medium text-[#9297A0]">
+                Elevating Your Digital Experience with Unmatched Innovation, Quality, and Reliability
+            </p>
+    
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12">
+                <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-white">🚀 Multiple Area Expertise</h3>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                        <p>From app & web development to video editing, promotions, and lead generation—we do it all.</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-white">🔥 Result-Driven Strategies</h3>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                        <p>We deliver services that ensure real, measurable results—boosting installs, conversions, and visibility.</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-white">⚡ Reliable Execution</h3>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                        <p>We work efficiently without compromising quality, ensuring on-time project completion.</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-white">💡 Innovative Solutions</h3>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                        <p>We craft custom and innovative solutions that align with your unique business goals.</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-white">💯 Client-Centric Approach</h3>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                        <p>Transparent communication, dedicated support, and flexible service models to match your needs.</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-white">📈 Proven Track Record</h3>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                        <p>Helping startups, brands, and enterprises scale with cutting-edge digital solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="our-services" class="bg-[#121212] py-16">
         <div class="w-11/12 mx-auto text-center">
             <h2 class="text-[48px] font-semibold text-white">Our Services</h2>
-            <p class="text-[18px] w-[600px] mx-auto mt-4 font-medium text-[#9297A0]">
+            <p class="text-[18px] max-w-[600px] mx-auto mt-4 font-medium text-[#9297A0]">
                 Explore our wide range of expert services designed to help your business grow and succeed.
             </p>
-
-            <div class="grid grid-cols-4 gap-10 mt-12">
-                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
-                    <!-- Image Section -->
+    
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-12">
+                <!-- Web Development -->
+                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/web-development.jpg" alt="Card Image" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
-                        </div>
+                        <img src="./assets/web-development.jpg" alt="Web Development" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
                     </div>
-
-                    <!-- Title & Button Section -->
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">Web Development</h3>
-                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
-                            <i class="fas fa-arrow-right text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
-                    <!-- Image Section -->
-                    <div class="relative h-[70%]">
-                        <img src="./assets/app-development.jpg" alt="Card Image" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        <div class="mt-2 flex items-center gap-2">
+                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <a href="https://wa.me/8801622559988" target="_blank"
+                                class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
+                                <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Title & Button Section -->
+                </div>
+    
+                <!-- App Development -->
+                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                    <div class="relative h-[70%]">
+                        <img src="./assets/app-development.jpg" alt="App Development" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                    </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">App Development</h3>
-                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
-                            <i class="fas fa-arrow-right text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
-                    <!-- Image Section -->
-                    <div class="relative h-[70%]">
-                        <img src="./assets/console.jpg" alt="Card Image" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        <div class="mt-2 flex items-center gap-2">
+                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <a href="https://wa.me/8801622559988" target="_blank"
+                                class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
+                                <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Title & Button Section -->
+                </div>
+    
+                <!-- App Publishing -->
+                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                    <div class="relative h-[70%]">
+                        <img src="./assets/console.jpg" alt="App Publishing" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                    </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">App Publishing</h3>
-                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
-                            <i class="fas fa-arrow-right text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
-                    <!-- Image Section -->
-                    <div class="relative h-[70%]">
-                        <img src="./assets/app.jpg" alt="Card Image" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        <div class="mt-2 flex items-center gap-2">
+                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <a href="https://wa.me/8801622559988" target="_blank"
+                                class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
+                                <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Title & Button Section -->
+                </div>
+    
+                <!-- App Promotion -->
+                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                    <div class="relative h-[70%]">
+                        <img src="./assets/app.jpg" alt="App Promotion" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                    </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
-                        <h3 class="text-xl text-white font-semibold">App Promoting</h3>
-                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
-                            <i class="fas fa-arrow-right text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
-                    <!-- Image Section -->
-                    <div class="relative h-[70%]">
-                        <img src="./assets/adds.jpg" alt="Card Image" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        <h3 class="text-xl text-white font-semibold">App Promotion</h3>
+                        <div class="mt-2 flex items-center gap-2">
+                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <a href="https://wa.me/8801622559988" target="_blank"
+                                class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
+                                <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Title & Button Section -->
+                </div>
+    
+                <!-- Ad Promotion -->
+                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                    <div class="relative h-[70%]">
+                        <img src="./assets/adds.jpg" alt="Ad Promotion" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                    </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
-                        <h3 class="text-xl text-white font-semibold">Adds Promotion</h3>
-                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
-                            <i class="fas fa-arrow-right text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
-                    <!-- Image Section -->
-                    <div class="relative h-[70%]">
-                        <img src="./assets/leads-selling.jpg" alt="Card Image" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        <h3 class="text-xl text-white font-semibold">Ad Promotion</h3>
+                        <div class="mt-2 flex items-center gap-2">
+                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <a href="https://wa.me/8801622559988" target="_blank"
+                                class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
+                                <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Title & Button Section -->
+                </div>
+    
+                <!-- Lead Selling -->
+                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                    <div class="relative h-[70%]">
+                        <img src="./assets/leads-selling.jpg" alt="Lead Selling" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                    </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">Lead Selling</h3>
-                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
-                            <i class="fas fa-arrow-right text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
-                    <!-- Image Section -->
-                    <div class="relative h-[70%]">
-                        <img src="./assets/12.avif" alt="Card Image" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        <div class="mt-2 flex items-center gap-2">
+                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <a href="https://wa.me/8801622559988" target="_blank"
+                                class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
+                                <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Title & Button Section -->
+                </div>
+                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                    <div class="relative h-[70%]">
+                        <img src="./assets/12.avif" alt="12 & 20 testing" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                    </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">12 & 20 Testing</h3>
-                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
-                            <i class="fas fa-arrow-right text-xl"></i>
-                        </button>
+                        <div class="mt-2 flex items-center gap-2">
+                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <a href="https://wa.me/8801622559988" target="_blank"
+                                class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
+                                <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="relative w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A]">
-                    <!-- Image Section -->
+                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/20.jpg" alt="Card Image" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
-                        </div>
+                        <img src="./assets/20.jpg" alt="Lead Selling" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
                     </div>
-
-                    <!-- Title & Button Section -->
                     <div class="h-[30%] p-4 flex flex-col items-start">
-                        <h3 class="text-xl text-white font-semibold">Google Console Renting</h3>
-                        <button class="bg-green-500 px-3 py-1.5 mt-2 text-white rounded-full">
-                            <i class="fas fa-arrow-right text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-[#090A0B] py-16">
-        <div class="w-11/12 mx-auto text-center">
-            <!-- Title -->
-            <h2 class="text-[48px] font-semibold text-white">Why Choose Us?</h2>
-            <p class="text-[18px] w-[600px] mx-auto mt-4 font-medium text-[#9297A0]">
-                Our expertise and commitment to quality make us the best choice for your business needs.
-            </p>
-
-            <!-- Two-column layout -->
-            <div class="grid md:grid-cols-2 gap-10 mt-12 items-start">
-                <!-- Left Side - Image -->
-                <div class="w-full">
-                    <img src="./assets/why-choose-us.jpg" alt="Why Choose Us" class="w-full h-[485px] object-cover rounded-lg shadow-lg" />
-                </div>
-
-                <!-- Right Side - Brief & Accordion -->
-                <div class="text-left">
-                    <!-- Accordion Section -->
-                    <div class="space-y-4">
-                        <div class="border border-gray-600 rounded-lg overflow-hidden">
-                            <button
-                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
-                                onclick="toggleAccordion(this)">
-                                <span>Expert Team</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="p-4 text-[#9297A0] bg-[#2C2F33]">Our team consists of skilled professionals with
-                                years of experience.</div>
-                        </div>
-
-                        <div class="border border-gray-600 rounded-lg overflow-hidden">
-                            <button
-                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
-                                onclick="toggleAccordion(this)">
-                                <span>Quality Assurance</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">We ensure top-notch quality in every
-                                project we deliver.</div>
-                        </div>
-
-                        <div class="border border-gray-600 rounded-lg overflow-hidden">
-                            <button
-                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
-                                onclick="toggleAccordion(this)">
-                                <span>Timely Delivery</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">We prioritize deadlines without
-                                compromising quality.</div>
-                        </div>
-
-                        <div class="border border-gray-600 rounded-lg overflow-hidden">
-                            <button
-                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
-                                onclick="toggleAccordion(this)">
-                                <span>Customer Support</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">24/7 dedicated support to assist you at
-                                any stage.</div>
-                        </div>
-                        <div class="border border-gray-600 rounded-lg overflow-hidden">
-                            <button
-                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
-                                onclick="toggleAccordion(this)">
-                                <span>Affordable Pricing</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">We offer competitive pricing without compromising on quality.</div>
-                        </div>
-                        <div class="border border-gray-600 rounded-lg overflow-hidden">
-                            <button
-                                class="w-full flex items-center justify-between text-left p-4 bg-[#23272A] hover:bg-[#2C2F33] font-semibold text-white"
-                                onclick="toggleAccordion(this)">
-                                <span>Affordable Pricing</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="p-4 hidden text-[#9297A0] bg-[#2C2F33]">We offer competitive pricing without compromising on quality.</div>
+                        <h3 class="text-xl text-white font-semibold">Lead Selling</h3>
+                        <div class="mt-2 flex items-center gap-2">
+                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <a href="https://wa.me/8801622559988" target="_blank"
+                                class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
+                                <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+
+
+    <footer class="bg-[#121212] text-white pt-16 pb-6">
+        <div class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-2xl font-bold">BlacklyDev</h2>
+                <p class="mt-3 text-[#9297A0]">Providing top-notch app development, web solutions, and digital marketing
+                    services.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
+                <ul class="space-y-2 text-[#9297A0]">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Our Services</h3>
+                <ul class="space-y-2 text-[#9297A0]">
+                    <li><a href="#">App Development</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">App Publishing</a></li>
+                    <li><a href="#">App Promotion</a></li>
+                    <li><a href="#">Lead Generation</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social Media -->
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Contact Us</h3>
+                <p class="text-[#9297A0]">Email: support@blackly.dev</p>
+                <p class="text-[#9297A0]">Phone: +123 456 7890</p>
+                <div class="flex gap-4 mt-3">
+                    <a href="#" class="text-2xl text-[#9297A0]"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-2xl text-[#9297A0]"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-2xl text-[#9297A0]"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-2xl text-[#9297A0]"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-[#23272A] mt-8 pt-6 text-center text-[#9297A0]">
+            <p>&copy; 2025 BlacklyDev. All rights reserved.</p>
+        </div>
+    </footer>
+
+
 
     <script>
         function toggleAccordion(button) {
@@ -421,6 +490,15 @@
         function closeAlert() {
             document.getElementById("customAlert").classList.add("hidden");
         }
+
+        // JavaScript for Menu Toggle
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
     </script>
 
 
