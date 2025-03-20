@@ -51,19 +51,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <style>
-        body {
-            font-family: Montserrat;
-        }
-
-        .text-outline {
-            text-shadow:
-                -2px -2px 0 white,
-                2px -2px 0 white,
-                -2px 2px 0 white,
-                2px 2px 0 white;
-        }
-    </style>
+    
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/d85ca7a2f2.js" crossorigin="anonymous"></script>
@@ -76,11 +64,15 @@
             <div class="flex items-center gap-4">
 
                 <div class="flex items-center gap-2">
-                    <div class="bg-[#23272A] rounded-full border border-white border-2">
-                        <img src="./assets/logo.png" class="w-[25px]" alt="">
+                    <div class="bg-[#23272A] rounded-full border-white border-2">
+                      <img loading="lazy"
+                        src="./assets/logo.png"
+                        class="w-8 h-8 rotate-[25deg]"
+                        alt=""
+                      />
                     </div>
-                    <h2 class="text-[24px] font-black text-black text-outline">Blackly</h2>
-                </div>
+                    <h2 class="text-[24px] font-semibold text-white">Blackly</h2>
+                  </div>
                 <button id="menu-toggle" class="lg:hidden text-white text-2xl focus:outline-none">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -103,7 +95,7 @@
             <div>
                 <a href="https://wa.me/8801622559988" target="_blank" rel="noopener noreferrer">
                     <button
-                        class="text-[18px] font-medium text-[#121212] bg-white px-4 py-2 rounded-full flex items-center gap-2">
+                        class="text-[18px] font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
                         <i class="fa-solid text-white bg-[#121212] px-4 py-1.5 rounded-full fa-phone"></i>Contact Us
                     </button>
                 </a>
@@ -128,16 +120,18 @@
                 <a href="#our-services">
                     <button
                         class="text-[16px] md:text-[18px] mt-6 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
-                        <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-arrow-right"></i> Get Started
+                        <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-arrow-right"></i> Get
+                        Started
                     </button>
                 </a>
             </div>
-    
+
             <!-- Responsive Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 place-items-center w-full">
                 <!-- Card 1 -->
                 <div class="w-full max-w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="./assets/undraw_mobile-development_tjxm.svg" alt="Card Image">
+                    <img loading="lazy" class="w-full h-48 object-cover" src="./assets/undraw_mobile-development_tjxm.svg"
+                        alt="Card Image">
                     <div class="p-5">
                         <h3 class="text-xl font-semibold text-[#FFFFFF]">Development & Publishing</h3>
                         <ul class="mt-3 text-[#D1D5DB] space-y-2">
@@ -148,15 +142,16 @@
                         <a href="https://wa.me/8801622559988" target="_blank" rel="noopener noreferrer">
                             <button
                                 class="text-[16px] md:text-[18px] mt-6 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
-                                <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-phone"></i> Contact Us
+                                <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-phone"></i> Contact
+                                Us
                             </button>
                         </a>
                     </div>
                 </div>
-    
+
                 <!-- Card 2 -->
                 <div class="w-full max-w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="./assets/undraw_programming_65t2.svg" alt="Card Image">
+                    <img loading="lazy" class="w-full h-48 object-cover" src="./assets/undraw_programming_65t2.svg" alt="Card Image">
                     <div class="p-5">
                         <h3 class="text-xl font-semibold text-[#FFFFFF]">Marketing & Promotion</h3>
                         <ul class="mt-3 text-[#D1D5DB] space-y-2">
@@ -167,15 +162,17 @@
                         <a href="https://wa.me/8801622559988" target="_blank" rel="noopener noreferrer">
                             <button
                                 class="text-[16px] md:text-[18px] mt-6 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
-                                <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-phone"></i> Contact Us
+                                <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-phone"></i> Contact
+                                Us
                             </button>
                         </a>
                     </div>
                 </div>
-    
+
                 <!-- Card 3 -->
                 <div class="w-full max-w-[350px] h-[450px] bg-[#23272A] rounded-lg shadow-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="./assets/undraw_product-photography_pouq.svg" alt="Card Image">
+                    <img loading="lazy" class="w-full h-48 object-cover" src="./assets/undraw_product-photography_pouq.svg"
+                        alt="Card Image">
                     <div class="p-5">
                         <h3 class="text-xl font-semibold text-[#FFFFFF]">Testing & Console Services</h3>
                         <ul class="mt-3 text-[#D1D5DB] space-y-2">
@@ -186,7 +183,8 @@
                         <a href="https://wa.me/8801622559988" target="_blank" rel="noopener noreferrer">
                             <button
                                 class="text-[16px] md:text-[18px] mt-6 font-medium text-[#121212] bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
-                                <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-phone"></i> Contact Us
+                                <i class="fa-solid text-white bg-[#121212] px-4 py-2 rounded-full fa-phone"></i> Contact
+                                Us
                             </button>
                         </a>
                     </div>
@@ -194,74 +192,88 @@
             </div>
         </div>
     </section>
-    
+
     <section id="why-choose-us" class="bg-[#121212] pt-32 pb-16">
         <div class="w-11/12 mx-auto">
             <h2 class="text-[36px] md:text-[48px] text-center font-semibold text-white">Why Choose Us</h2>
-            <p class="text-[16px] md:text-[18px] max-w-[90%] md:max-w-[600px] text-center mx-auto mt-4 font-medium text-[#9297A0]">
+            <p
+                class="text-[16px] md:text-[18px] max-w-[90%] md:max-w-[600px] text-center mx-auto mt-4 font-medium text-[#9297A0]">
                 Elevating Your Digital Experience with Unmatched Innovation, Quality, and Reliability
             </p>
-    
+
             <!-- Responsive Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12">
                 <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
-                    <h3 class="text-2xl font-semibold text-white">🚀 Multiple Area Expertise</h3>
-                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
-                        <p>From app & web development to video editing, promotions, and lead generation—we do it all.</p>
+                    <h3 class="text-2xl font-semibold text-white">01. Multiple Area Expertise</h3>
+                    <div
+                        class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                        <p>From app & web development to video editing, promotions, and lead generation—we do it all.
+                        </p>
                     </div>
                 </div>
                 <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
-                    <h3 class="text-2xl font-semibold text-white">🔥 Result-Driven Strategies</h3>
-                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
-                        <p>We deliver services that ensure real, measurable results—boosting installs, conversions, and visibility.</p>
+                    <h3 class="text-2xl font-semibold text-white">02. Result-Driven Strategies</h3>
+                    <div
+                        class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                        <p>We deliver services that ensure real, measurable results—boosting installs, conversions, and
+                            visibility.</p>
                     </div>
                 </div>
                 <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
-                    <h3 class="text-2xl font-semibold text-white">⚡ Reliable Execution</h3>
-                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                    <h3 class="text-2xl font-semibold text-white">03. Reliable Execution</h3>
+                    <div
+                        class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
                         <p>We work efficiently without compromising quality, ensuring on-time project completion.</p>
                     </div>
                 </div>
                 <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
-                    <h3 class="text-2xl font-semibold text-white">💡 Innovative Solutions</h3>
-                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                    <h3 class="text-2xl font-semibold text-white">04. Innovative Solutions</h3>
+                    <div
+                        class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
                         <p>We craft custom and innovative solutions that align with your unique business goals.</p>
                     </div>
                 </div>
                 <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
-                    <h3 class="text-2xl font-semibold text-white">💯 Client-Centric Approach</h3>
-                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
-                        <p>Transparent communication, dedicated support, and flexible service models to match your needs.</p>
+                    <h3 class="text-2xl font-semibold text-white">05. Client-Centric Approach</h3>
+                    <div
+                        class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                        <p>Transparent communication, dedicated support, and flexible service models to match your
+                            needs.</p>
                     </div>
                 </div>
                 <div class="p-6 bg-[#23272A] rounded-lg shadow-lg flex flex-col justify-between">
-                    <h3 class="text-2xl font-semibold text-white">📈 Proven Track Record</h3>
-                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
+                    <h3 class="text-2xl font-semibold text-white">06. Proven Track Record</h3>
+                    <div
+                        class="bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg rounded-lg p-4 text-white mt-2">
                         <p>Helping startups, brands, and enterprises scale with cutting-edge digital solutions.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section id="our-services" class="bg-[#121212] py-16">
         <div class="w-11/12 mx-auto text-center">
             <h2 class="text-[48px] font-semibold text-white">Our Services</h2>
             <p class="text-[18px] max-w-[600px] mx-auto mt-4 font-medium text-[#9297A0]">
                 Explore our wide range of expert services designed to help your business grow and succeed.
             </p>
-    
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-12">
                 <!-- Web Development -->
-                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                <div
+                    class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/web-development.jpg" alt="Web Development" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                        <img loading="lazy" src="./assets/web-development.jpg" alt="Web Development"
+                            class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
                     </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">Web Development</h3>
                         <div class="mt-2 flex items-center gap-2">
-                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <button
+                                class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
                             <a href="https://wa.me/8801622559988" target="_blank"
                                 class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
                                 <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
@@ -269,17 +281,21 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- App Development -->
-                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                <div
+                    class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/app-development.jpg" alt="App Development" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                        <img loading="lazy" src="./assets/app-development.jpg" alt="App Development"
+                            class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
                     </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">App Development</h3>
                         <div class="mt-2 flex items-center gap-2">
-                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <button
+                                class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
                             <a href="https://wa.me/8801622559988" target="_blank"
                                 class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
                                 <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
@@ -287,17 +303,20 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- App Publishing -->
-                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                <div
+                    class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/console.jpg" alt="App Publishing" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                        <img loading="lazy" src="./assets/console.jpg" alt="App Publishing" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
                     </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">App Publishing</h3>
                         <div class="mt-2 flex items-center gap-2">
-                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <button
+                                class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
                             <a href="https://wa.me/8801622559988" target="_blank"
                                 class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
                                 <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
@@ -305,17 +324,20 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- App Promotion -->
-                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                <div
+                    class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/app.jpg" alt="App Promotion" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                        <img loading="lazy" src="./assets/app.jpg" alt="App Promotion" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
                     </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">App Promotion</h3>
                         <div class="mt-2 flex items-center gap-2">
-                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <button
+                                class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
                             <a href="https://wa.me/8801622559988" target="_blank"
                                 class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
                                 <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
@@ -323,17 +345,20 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Ad Promotion -->
-                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                <div
+                    class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/adds.jpg" alt="Ad Promotion" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                        <img loading="lazy" src="./assets/adds.jpg" alt="Ad Promotion" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
                     </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">Ad Promotion</h3>
                         <div class="mt-2 flex items-center gap-2">
-                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <button
+                                class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
                             <a href="https://wa.me/8801622559988" target="_blank"
                                 class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
                                 <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
@@ -341,17 +366,20 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Lead Selling -->
-                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                <div
+                    class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/leads-selling.jpg" alt="Lead Selling" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                        <img loading="lazy" src="./assets/leads-selling.jpg" alt="Lead Selling" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
                     </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">Lead Selling</h3>
                         <div class="mt-2 flex items-center gap-2">
-                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <button
+                                class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
                             <a href="https://wa.me/8801622559988" target="_blank"
                                 class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
                                 <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
@@ -359,15 +387,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                <div
+                    class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/12.avif" alt="12 & 20 testing" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                        <img loading="lazy" src="./assets/12.avif" alt="12 & 20 testing" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
                     </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
                         <h3 class="text-xl text-white font-semibold">12 & 20 Testing</h3>
                         <div class="mt-2 flex items-center gap-2">
-                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <button
+                                class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
                             <a href="https://wa.me/8801622559988" target="_blank"
                                 class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
                                 <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
@@ -375,15 +406,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
+                <div
+                    class="relative w-full max-w-[300px] h-96 rounded-lg overflow-hidden shadow-lg bg-[#23272A] mx-auto">
                     <div class="relative h-[70%]">
-                        <img src="./assets/20.jpg" alt="Lead Selling" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent"></div>
+                        <img loading="lazy" src="./assets/20.jpg" alt="Lead Selling" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-[#23272A] to-transparent">
+                        </div>
                     </div>
                     <div class="h-[30%] p-4 flex flex-col items-start">
-                        <h3 class="text-xl text-white font-semibold">Lead Selling</h3>
+                        <h3 class="text-xl text-white font-semibold">Console Renting</h3>
                         <div class="mt-2 flex items-center gap-2">
-                            <button class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
+                            <button
+                                class="px-4 h-10 bg-white text-black font-medium text-lg rounded-full">Details</button>
                             <a href="https://wa.me/8801622559988" target="_blank"
                                 class="bg-[#25D366] w-10 h-10 flex items-center justify-center rounded-full">
                                 <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
@@ -394,7 +428,8 @@
             </div>
         </div>
     </section>
-    
+
+
 
 
     <footer class="bg-[#121212] text-white pt-16 pb-6">
@@ -452,7 +487,17 @@
 
 
 
-    <script>
+
+    <script defer>
+        // JavaScript for Menu Toggle
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
         function toggleAccordion(button) {
             const content = button.nextElementSibling;
             const icon = button.querySelector("i");
@@ -465,40 +510,6 @@
             content.classList.toggle('hidden');
             icon.classList.toggle('rotate-180');
         }
-    </script>
-
-
-
-
-    <!-- Custom Alert Box -->
-    <div id="customAlert"
-        class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
-            <h2 class="text-lg font-bold text-gray-800">🚧 Website Under Construction 🚧</h2>
-            <p class="text-gray-600 mt-2">Some features may not be available.</p>
-            <button onclick="closeAlert()" class="mt-4 bg-black text-white px-4 py-2 rounded-lg">OK</button>
-        </div>
-    </div>
-
-    <script>
-        // Function to show alert on page load
-        window.onload = function () {
-            document.getElementById("customAlert").classList.remove("hidden");
-        };
-
-        // Function to close the alert
-        function closeAlert() {
-            document.getElementById("customAlert").classList.add("hidden");
-        }
-
-        // JavaScript for Menu Toggle
-
-        const menuToggle = document.getElementById("menu-toggle");
-        const menu = document.getElementById("menu");
-
-        menuToggle.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
     </script>
 
 
